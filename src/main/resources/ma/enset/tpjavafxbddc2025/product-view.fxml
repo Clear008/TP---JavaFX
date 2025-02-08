@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" alignment="CENTER" stylesheets="@styles.css"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ma.enset.tpjavafxbddc2025.ProductController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <GridPane vgap="10" hgap="10">
+        <Label text="Nom:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="textFieldNom" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Prix:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="textFieldPrix" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button text="Ajouter" onAction="#addProduct"/>
+            <Button text="Supprimer" onAction="#deleteProduct" styleClass="button-delete"/>
+        </HBox>
+    </GridPane>
+
+    <ListView fx:id="listView" VBox.vgrow="ALWAYS"/>
+</VBox>
