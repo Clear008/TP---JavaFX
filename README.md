@@ -28,10 +28,10 @@ Fonctionnalités
 
 ## Technologies Utilisées
 
-JavaFX pour l'interface graphique
-FXML pour la structure de l'interface
-CSS pour le style
-Maven pour la gestion des dépendances
+- JavaFX pour l'interface graphique
+- FXML pour la structure de l'interface
+- CSS pour le style
+- Maven pour la gestion des dépendances
 
-Auteur
+## Auteur
 Wissal Leknouch
